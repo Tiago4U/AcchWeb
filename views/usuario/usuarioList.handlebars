@@ -1,0 +1,20 @@
+<table border="1px">
+    <tr>
+        <td> Login </td>
+        <td> Senha</td>
+        <td> Pergunta Secreta</td>
+        <td> Resposta Secreta</td>
+        <td> Editar</td>
+        <td> Deletar</td>
+    </tr>
+    {{#each usuarios}}
+    <tr>
+        <td>{{login}}</td>
+        <td>{{senha}}</td>
+        <td>{{pergunta_secreta}}</td>
+        <td>{{resposta_pergunta}}</td>
+        <td><a href="usuarioEdit/{{_id}}"> Editar </a></td>
+        <td><a href="usuarioDelete/{{_id}}"> Deletar </a></td>
+    </tr>
+    {{/each}}
+</table>
