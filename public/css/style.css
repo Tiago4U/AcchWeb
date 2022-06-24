@@ -1,0 +1,118 @@
+/*Geral*/
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/login.jpg');
+    background-size: 100% 100%;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: #08558B;
+}
+
+/*------------------------------------*/
+/*Conteiner Login*/
+
+#login-conteiner {
+    background-color: #FFF;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+/*------------------------------------*/
+/*Formulario*/
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label,
+input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+
+}
+
+input:focus {
+    border-bottom: 2px solid #08558B;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #FFF;
+    background-color: #08558B;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b223c;
+}
+
+
+#button-recuperarSenha:focus {
+    border-bottom: 2px solid #08558B;
+}
+
+#button-recuperarSenha {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #08558B;
+    cursor: pointer;
+}
+
+#button-recuperarSenha:hover {
+    background-color: #1b223c;
+}
