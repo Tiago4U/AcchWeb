@@ -1,18 +1,22 @@
 <table border="1px">
     <tr>
+        <td> Nome Completo</td>
+        <td> Data de Nascimento</td>
+        <td> Email</td>
         <td> Login </td>
         <td> Senha</td>
-        <td> Pergunta Secreta</td>
-        <td> Resposta Secreta</td>
+        <td> Tipo de Usuário</td>
         <td> Editar</td>
         <td> Deletar</td>
     </tr>
     {{#each usuarios}}
     <tr>
+        <td>{{nome}}</td>
+        <td>{{datanasc}}</td>
+        <td>{{email}}</td>
         <td>{{login}}</td>
         <td>{{senha}}</td>
-        <td>{{pergunta_secreta}}</td>
-        <td>{{resposta_pergunta}}</td>
+        <td>{{tipo}}</td>
         <td><a href="usuarioEdit/{{_id}}"> Editar </a></td>
         <td><a href="usuarioDelete/{{_id}}"> Deletar </a></td>
     </tr>
