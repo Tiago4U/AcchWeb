@@ -1,0 +1,24 @@
+<table border="1px">​
+    <tr>​
+        <td> Nome </td>​
+        <td> Nome do Proprietario</td>​
+        <td> Endereço</td>​
+        <td> Tipo</td>
+        <td> Raça</td>
+        <td> Imagem</td>
+        <td> Editar</td>
+        <td> Deletar</td>
+    </tr>​
+    {{#each animais}}​
+    <tr>​
+        <td>{{nome}}</td>​
+        <td>{{nomeDoProprietario}}</td>​
+        <td>{{endereco}}</td>
+        <td>{{tipo}}</td>
+        <td>{{raca}}</td>
+        <td><image width="50px" height="50px" src="uploads/{{imagem}}"></td>
+        <td><a href="animalEdit/{{_id}}"> Editar </a></td>
+        <td><a href="animalDelete/{{_id}}"> Deletar </a></td>​
+    </tr>​
+    {{/each}}​
+</table>
