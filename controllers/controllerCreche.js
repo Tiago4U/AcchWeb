@@ -7,12 +7,14 @@ module.exports = {
     },
     async postCreate(req, res) {
         const {nome, bairro, endereco} = req.body;
-        const creche = new Creche({nome, bairro, endereco});    
+        const creche = new Creche({nome, bairro, endereco});
         await creche.save();
         res.redirect('/home');
     },
     async getList(req, res) {
         Creche.find().then((creches) => {
+            console.log(creches);
+            console.log("asd213");
             res.render('creche/crecheList', {creches: creches.map(creches => creches.toJSON())});
         });
     },
