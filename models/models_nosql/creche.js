@@ -7,4 +7,4 @@ const Creche = Schema({
     endereco: { type: String, required: true },
 });
 
-module.exports = mongoose.model("Creche", Creche)
+module.exports = mongoose.model("Creches", Creche)
