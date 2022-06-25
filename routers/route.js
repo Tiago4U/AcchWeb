@@ -1,6 +1,5 @@
 const express = require('express');
 const controllerUsuario = require('../controllers/controllerUsuario');
-const controllerReceita = require('../controllers/controllerReceita');
 const controllerAnimal = require('../controllers/controllerAnimal');
 const route = express.Router();
 const multer = require('multer');
@@ -49,13 +48,6 @@ route.post("/recuperarSenha", controllerUsuario.postRecuperarSenha);
 route.get("/usuarioCreate", controllerUsuario.getCreate);
 route.post("/usuarioCreate", controllerUsuario.postCreate);
 route.get("/usuarioList", controllerUsuario.getList);
-
-//Controller Receita
-//Receita-CRUD
-route.get("/receitaCreate", controllerReceita.getCreate);
-route.post("/receitaCreate", controllerReceita.postCreate);
-route.get("/receitaList", controllerReceita.getList);
-
 
 //Controller Animal
 //Animal-CRUD
