@@ -4,7 +4,7 @@ const Animal = require('../models/models_nosql/animal');
 module.exports = {
 
     async getCreate(req, res) {
-        res.render('animal/animalCreate');
+        res.render('crianca/criancaCreate');
     },
     async postCreate(req, res) {
         const {nome, nomeDoProprietario, endereco, tipo, raca} = req.body;
