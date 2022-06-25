@@ -64,6 +64,23 @@ route.get("/usuarioEdit/:id", controllerUsuario.getEdit);
 route.post("/usuarioEdit", controllerUsuario.postEdit);
 route.get("/usuarioDelete/:id", controllerUsuario.getDelete);
 
+//Controller Creche
+//Creche-CRUD
+route.get("/CrecheCreate", controllerCreche.getCreate);
+route.get("/CrecheList", controllerCreche.getList);
+route.get("/CrecheEdit/:id", controllerCreche.getEdit);
+route.get("/CrecheDelete/:id", controllerCreche.getDelete);
 
-//route.post("/animalCreate", upload.single('imagem'), controllerAnimal.postCreate);
-//route.post("/animalEdit", upload.single('imagem'), controllerAnimal.postEdit);
+//Controller Turma
+//Turma-CRUD
+route.get("/turmaCreate", controllerTurma.getCreate);
+route.get("/turmaList", controllerTurma.getList);
+route.get("/turmaEdit/:id", controllerTurma.getEdit);
+route.get("/turmaDelete/:id", controllerTurma.getDelete);
+
+//Controller Crianca
+//Crianca-CRUD
+route.get("/criancaCreate", controllerCrianca.getCreate);
+route.get("/criancaList", controllerCrianca.getList);
+route.get("/criancaEdit/:id", controllerCrianca.getEdit);
+route.get("/criancaDelete/:id", controllerCrianca.getDelete);
