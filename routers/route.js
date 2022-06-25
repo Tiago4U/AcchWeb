@@ -1,6 +1,10 @@
 const express = require('express');
 const controllerUsuario = require('../controllers/controllerUsuario');
+const controllerCreche = require('../controllers/controllerCreche');
+const controllerTurma = require('../controllers/controllerTurma');
+const controllerCrianca = require('../controllers/controllerCrianca');
 const controllerAnimal = require('../controllers/controllerAnimal');
+
 const route = express.Router();
 const multer = require('multer');
 
@@ -30,7 +34,7 @@ route.get("/home", function (req, res) {
 //Parte do meio do código
 route.post("/login", controllerUsuario.postLogin);
 route.get("/logout", controllerUsuario.getLogout);
-route.get("/recuperarSenha/:login", controllerUsuario.getRecuperarSenha);
+//route.get("/recuperarSenha/:login", controllerUsuario.getRecuperarSenha);
 //Parte final do código
 
 
@@ -42,8 +46,8 @@ route.get("/logout", controllerUsuario.getLogout);
 //Usuario - Login e Recuperação de Senha
 route.get("/", controllerUsuario.getLogin);
 route.post("/login", controllerUsuario.postLogin);
-route.get("/recuperarSenha/:login", controllerUsuario.getRecuperarSenha);
-route.post("/recuperarSenha", controllerUsuario.postRecuperarSenha);
+//route.get("/recuperarSenha/:login", controllerUsuario.getRecuperarSenha);
+//route.post("/recuperarSenha", controllerUsuario.postRecuperarSenha);
 //Usuario - CRUD
 route.get("/usuarioCreate", controllerUsuario.getCreate);
 route.post("/usuarioCreate", controllerUsuario.postCreate);
@@ -52,17 +56,9 @@ route.get("/usuarioList", controllerUsuario.getList);
 //Controller Animal
 //Animal-CRUD
 route.get("/animalCreate", controllerAnimal.getCreate);
-//route.post("/animalCreate", controllerAnimal.postCreate);
-
-route.post("/animalCreate", upload.single('imagem'), controllerAnimal.postCreate);
-
 route.get("/animalList", controllerAnimal.getList);
 route.get("/animalEdit/:id", controllerAnimal.getEdit);
-
-route.post("/animalEdit", upload.single('imagem'), controllerAnimal.postEdit);
-//route.post("/animalEdit", controllerAnimal.postEdit);
 route.get("/animalDelete/:id", controllerAnimal.getDelete);
-
 
 route.get("/usuarioEdit/:id", controllerUsuario.getEdit);
 route.post("/usuarioEdit", controllerUsuario.postEdit);
