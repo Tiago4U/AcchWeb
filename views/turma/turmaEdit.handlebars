@@ -1,0 +1,9 @@
+<form action="/turmaEdit" method="POST" enctype="multipart/formdata">
+    <input type="hidden" name="id" value="{{turma._id}}">
+    <p>Creche: </p> <input type="text" name="creche" value="{{turma.creche}}">
+    <p>Identificador: </p> <input type="text" name="identificador" value="{{turma.identificador}}">
+    <p>Quantidade de Alunos : </p> <input type="text" name="qtalunos" value="{{turma.qtalunos}}">
+    <p>Quantidade de Vagas: </p> <input type="text" name="turma" value="{{turma.qtdvagas}}">
+    <br><br>
+    <input type="submit" value="Editar">
+</form>

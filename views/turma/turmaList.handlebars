@@ -1,0 +1,20 @@
+<table border="1px">​
+    <tr>​
+        <td> Creche </td>​
+        <td> Identificador</td>​
+        <td> Quantidade de Alunos</td>​
+        <td> Quantidade de Vagas</td>
+        <td> Editar</td>
+        <td> Deletar</td>
+    </tr>​
+    {{#each turma}}​
+    <tr>​
+        <td>{{creche}}</td>​
+        <td>{{identificador}}</td>​
+        <td>{{qtalunos}}</td>
+        <td>{{qtdvagas}}</td>
+        <td><a href="turmaEdit/{{_id}}"> Editar </a></td>
+        <td><a href="turmaDelete/{{_id}}"> Deletar </a></td>​
+    </tr>​
+    {{/each}}​
+</table>
