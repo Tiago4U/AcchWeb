@@ -1,15 +1,6 @@
 const { where } = require('../models/models_nosql/usuario');
 const Usuario = require('../models/models_nosql/usuario');
 
-function dataAtualFormatada(data){
-        dia  = data.getDate().toString(),
-        diaF = (dia.length == 1) ? '0'+dia : dia,
-        mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
-        mesF = (mes.length == 1) ? '0'+mes : mes,
-        anoF = data.getFullYear();
-    return diaF+"/"+mesF+"/"+anoF;
-}
-
 module.exports = {
 
     async getLogin(req, res) {
@@ -54,18 +45,18 @@ module.exports = {
         res.render('usuario/usuarioCreate');
     },
     async postCreate(req, res) {
+        function dataAtualFormatada(){
+            let data = new Date(),
+                dia  = data.getDate().toString().padStart(2, '0'),
+                mes  = (data.getMonth()+1).toString().padStart(2, '0'),
+                ano  = data.getFullYear();
+            return `${dia}/${mes}/${ano}`;
+        }
+        
+        console.log(dataAtualFormatada());
+        
         const {login, senha, datanasc, email, nome, tipo} = req.body;
-
-        /*console.log(req.body);    
-        const login = 'login';
-        const senha = 'senha';
-        const datanasc = '1900-01-01';
-        const email = 'email';
-        const nome = 'nome';
-        const tipo = 'tipo';*/
-        const data = Date(datanasc, 'YYYY-MM-DD');
-
-        const usuario = new Usuario({login, senha, dataAtualFormatada(datanasc), email, nome, tipo});
+        const usuario = new Usuario({login, senha, datanasc, email, nome, tipo});
         await usuario.save();
         res.redirect('/home');
     },
