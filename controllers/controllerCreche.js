@@ -7,7 +7,7 @@ module.exports = {
     },
     async postCreate(req, res) {
         const {nome, bairro, endereco} = req.body;
-        const creche = new Creche({nome, bairro, endereco});
+        const creche = new Creche({nome, bairro, endereco});    
         await creche.save();
         res.redirect('/home');
     },

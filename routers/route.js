@@ -66,10 +66,11 @@ route.get("/usuarioDelete/:id", controllerUsuario.getDelete);
 
 //Controller Creche
 //Creche-CRUD
-route.get("/CrecheCreate", controllerCreche.getCreate);
-route.get("/CrecheList", controllerCreche.getList);
-route.get("/CrecheEdit/:id", controllerCreche.getEdit);
-route.get("/CrecheDelete/:id", controllerCreche.getDelete);
+route.get("/crecheCreate", controllerCreche.getCreate);
+route.get("/crecheCreate", controllerCreche.postCreate);
+route.get("/crecheList", controllerCreche.getList);
+route.get("/crecheEdit/:id", controllerCreche.getEdit);
+route.get("/crecheDelete/:id", controllerCreche.getDelete);
 
 //Controller Turma
 //Turma-CRUD
