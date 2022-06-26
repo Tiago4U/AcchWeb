@@ -3,88 +3,168 @@
 <html>
 
 <head>​
-    <title>Sistema de Controle de Creches</title>
+    <title>Sistema de Controle des Animais</title>
     <meta name="viewport" content="width = device-width, initial-scale =1">
     <link rel="stylesheet" media="( max-width: 800 px)" href="../css/estilo.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>​​
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/stylehome.css">​​
 </head>​
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-1 col-md-3"> </div>
-            <div class="col-3 col-md-3">
-                <br>
-                <img src="../images/home.png" width="100%" alt="não carregou a imagem" />
-            </div>
-            <div class="col-1 col-3"> </div>
+
+    <header id="header">
+        <a id="logo" href="">Logo</a>
+        <nav id="nav">
+
+            <ul id="menu">
+                <li><a href="/home">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Alunos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/criancaCreate">Cadastrar</a>
+                        <a class="dropdown-item" href="/criancaList">Listar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Turmas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/turmaCreate">Cadastrar</a>
+                        <a class="dropdown-item" href="/turmaList">Listar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Creches
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/crecheCreate">Cadastrar</a>
+                        <a class="dropdown-item" href="/crecheList">Listar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Usuarios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/usuarioCreate">Cadastrar</a>
+                        <a class="dropdown-item" href="/usuarioList">Listar</a>
+                    </div>
+                </li>
+                </li>
+                <li><a class="nav-link" href="/logout">Logout</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <center> ​
+        <br> <br>​
+        {{{body}}}​
+    </center>​
+
+
+</body>
+
+​ <div class="col-100">
+    <div class="content texto-destaque ">
+        <h1>Sistema para CMEI</h1>
+        <p> Sistema especializado para CMEI(Centro Municipal de Educação Infantil), utilizado para gerenciamento de
+            creches, turmas, pais e alunos. </p>
+    </div>
+</div>
+<div class="col-100 bloco-imagens-texto">
+    <div class="content" style="margin-left: 2%; float: left;">
+        <div class="col-3 bloco-texto bloco-imagem">
+            <img src="./img/software.png">
+            <h2>asasasasasasasasasas</h2>
+            <p> asasasasasasasasasasasasasasasa
+                sasasasasasasasasasasasasa
+                sasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasa
+                sasasasasasas
+            </p>
+        </div>
+        <div class=" col-3 bloco-texto bloco-imagem">
+            <img src="./img/Biotecnologia.png">
+            <h2>asasasasasasasasasas</h2>
+            <p> asasasasasasasasasasasasasasasa
+                sasasasasasasasasasasasasa
+                sasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasa
+                sasasasasasas
+            </p>
+        </div>
+        <div class="col-3 bloco-texto bloco-imagem">
+            <img src="./img/zootecnia.png">
+            <h2>asasasasasasasasasas</h2>
+            <p> asasasasasasasasasasasasasasasa
+                sasasasasasasasasasasasasa
+                sasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasa
+                sasasasasasas
+            </p>
         </div>
     </div>
-    <br />
-    <di>
-        <nav class="navbar navbar-expand-lg  navbar-light bg-light">
-            <nav class="navbar navbar-light" style="background-color: #0785df;">
-                <a class="navbar-brand" href="/home">Sistema de Controle de Creches</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Alunos
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/criancaCreate">Cadastrar</a>
-                                <a class="dropdown-item" href="/criancaList">Listar</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Turmas
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/turmaCreate">Cadastrar</a>
-                                <a class="dropdown-item" href="/turmaList">Listar</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Creches
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/crecheCreate">Cadastrar</a>
-                                <a class="dropdown-item" href="/crecheList">Listar</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Usuarios
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/usuarioCreate">Cadastrar</a>
-                                <a class="dropdown-item" href="/usuarioList">Listar</a>
-                            </div>
-                        </li>
-                        <li class="/logout">
-                            <a class="nav-link" href="/logout">Logout</a>
-                        </li>
-                    </ul>
-                    </form>
-                </div> ​
-                <center> ​
-                    <br> <br>​
-                    {{{body}}}​
-                </center>​
-</body>​
+    <div class="content" style="margin-left: 2%; float: left;">
+        <div class="col-3 bloco-texto bloco-imagem">
+            <img src="./img/florestal.png">
+            <h2>asasasasasasasasasas</h2>
+            <p> asasasasasasasasasasasasasasasa
+                sasasasasasasasasasasasasa
+                sasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasa
+                sasasasasasas
+            </p>
+        </div>
+        <div class="col-3 bloco-texto bloco-imagem">
+            <img src="./img/agronomia.png">
+            <h2>asasasasasasasasasas</h2>
+            <p> asasasasasasasasasasasasasasasa
+                sasasasasasasasasasasasasa
+                sasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasa
+                sasasasasasas
+            </p>
+        </div>
+        <div class="col-3 bloco-texto bloco-imagem">
+            <img src="./img/biologicas.png">
+            <h2>asasasasasasasasasas</h2>
+            <p> asasasasasasasasasasasasasasasa
+                sasasasasasasasasasasasasa
+                sasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasasas
+                asasasasasasasasasasasasasasa
+                sasasasasasas
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/migrate.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 
 </html>

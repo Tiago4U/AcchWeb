@@ -1,17 +1,53 @@
-<form action="/criancaCreate" method="POST"> ​
-    Nome: <input type="text" name="nome">​
-    <br> <br>
-    RG: <input type="text" name="rg">​
-    <br> <br>​
-    Nome do Responsável: <input type="text" name="nomedopai">​
-    <br> <br>​
-    Endereço: <input type="text" name="endereco">​
-    <br> <br>
-    Bairro: <input type="text" name="bairro">​
-    <br> <br>​
-    Data de Nascimento: <input type="date" name="datanasc">​
-    <br> <br>​
-    Turma: <input type="text" name="turma">
-    <br> <br>​
-    <input type="submit" value="Cadastrar">​
-</form>​ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+</head>
+
+<body>
+    <section>
+
+        <h1>Cadastrar Aluno</h1>
+        <form action="/criancaCreate" method="POST"> ​
+            <fieldset>
+                <div class="container">
+                    <input type="text" name="nome" placeholder="Digite o nome do aluno">
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="rg" placeholder="Digite o RG do aluno">
+
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="nomedopai" placeholder="Digite o nome do pai do aluno">​
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="endereco" placeholder="Digite o endereço do aluno ">​
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="bairro" placeholder="Digite o bairro do aluno">
+                    <label></label>
+                </div>
+                <div class="container">
+
+                    <label>Data de nascimento</label>
+                    ​
+                    <input type="date" name="datanasc" placeholder="Digite a data de nascimento do aluno">
+
+                </div>
+                <div class="container">​
+                    <input type="text" name="turma" placeholder="Digite o nome da turma do aluno">
+                    <label></label>
+                </div>
+            </fieldset>
+
+            <div>
+                <input id="buttoncadastro" type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </section>
+</body>
+​

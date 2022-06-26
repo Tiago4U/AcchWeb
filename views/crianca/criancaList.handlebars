@@ -1,25 +1,46 @@
-<table border="1px">​
-    <tr>​
-        <td> Nome </td>​
-        <td> RG</td>​
-        <td> Nome do Responsável</td>​
-        <td> Endereço</td>
-        <td> Bairro</td>
-        <td> Turma</td>
-        <td> Imagem</td>
-        <td> Editar</td>
-        <td> Deletar</td>
-    </tr>​
-    {{#each crianca}}​
-    <tr>​
-        <td>{{nome}}</td>​
-        <td>{{rg}}</td>​
-        <td>{{nomedopai}}</td>
-        <td>{{endereco}}</td>
-        <td>{{bairro}}</td>
-        <td>{{turma}}</td>
-        <td><a href="criancaEdit/{{_id}}"> Editar </a></td>
-        <td><a href="criancaDelete/{{_id}}"> Deletar </a></td>​
-    </tr>​
-    {{/each}}​
-</table>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+</head>
+
+<body>
+    <section>
+
+        <h1>Listagem de Creches</h1>
+        <form action="/usuarioCreate" method="post">
+            <fieldset>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">RG</th>
+                            <th scope="col">Nome do Responsável</th>
+                            <th scope="col">Endereço</th>
+                            <th scope="col">Bairro</th>
+                            <th scope="col">Turma</th>
+                            <th scope="col">Imagem</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Deletar</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        {{#each crianca}}
+                        <tr>
+                            <td>{{nome}}</td>​
+                            <td>{{rg}}</td>​
+                            <td>{{nomedopai}}</td>
+                            <td>{{endereco}}</td>
+                            <td>{{bairro}}</td>
+                            <td>{{turma}}</td>
+                            <td><a id="buttoncadastrar" href="criancaEdit/{{_id}}"> Editar </a></td>
+                            <td><a id="buttondeletar" href="criancaDelete/{{_id}}"> Deletar </a></td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </section>
+</body>
