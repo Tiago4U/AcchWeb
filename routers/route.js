@@ -3,7 +3,7 @@ const controllerUsuario = require('../controllers/controllerUsuario');
 const controllerCreche = require('../controllers/controllerCreche');
 const controllerTurma = require('../controllers/controllerTurma');
 const controllerCrianca = require('../controllers/controllerCrianca');
-//const controllerAnimal = require('../controllers/controllerAnimal');
+
 
 const route = express.Router();
 const multer = require('multer');
@@ -52,13 +52,6 @@ route.post("/login", controllerUsuario.postLogin);
 route.get("/usuarioCreate", controllerUsuario.getCreate);
 route.post("/usuarioCreate", controllerUsuario.postCreate);
 route.get("/usuarioList", controllerUsuario.getList);
-
-//Controller Animal
-//Animal-CRUD
-//route.get("/animalCreate", controllerAnimal.getCreate);
-//route.get("/animalList", controllerAnimal.getList);
-//route.get("/animalEdit/:id", controllerAnimal.getEdit);
-//route.get("/animalDelete/:id", controllerAnimal.getDelete); 
 
 route.get("/usuarioEdit/:id", controllerUsuario.getEdit);
 route.post("/usuarioEdit", controllerUsuario.postEdit);
