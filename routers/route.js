@@ -75,6 +75,7 @@ route.get("/crecheDelete/:id", controllerCreche.getDelete);
 //Controller Turma
 //Turma-CRUD
 route.get("/turmaCreate", controllerTurma.getCreate);
+route.post("/turmaCreate", controllerTurma.postCreate);
 route.get("/turmaList", controllerTurma.getList);
 route.get("/turmaEdit/:id", controllerTurma.getEdit);
 route.get("/turmaDelete/:id", controllerTurma.getDelete);
@@ -82,6 +83,7 @@ route.get("/turmaDelete/:id", controllerTurma.getDelete);
 //Controller Crianca
 //Crianca-CRUD
 route.get("/criancaCreate", controllerCrianca.getCreate);
+route.post("/criancaCreate", controllerCrianca.postCreate);
 route.get("/criancaList", controllerCrianca.getList);
 route.get("/criancaEdit/:id", controllerCrianca.getEdit);
 route.get("/criancaDelete/:id", controllerCrianca.getDelete);

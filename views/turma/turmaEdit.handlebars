@@ -1,9 +1,9 @@
-<form action="/turmaEdit" method="POST" enctype="multipart/formdata">
-    <input type="hidden" name="id" value="{{turma._id}}">
-    <p>Creche: </p> <input type="text" name="creche" value="{{turma.creche}}">
-    <p>Identificador: </p> <input type="text" name="identificador" value="{{turma.identificador}}">
-    <p>Quantidade de Alunos : </p> <input type="text" name="qtalunos" value="{{turma.qtalunos}}">
-    <p>Quantidade de Vagas: </p> <input type="text" name="turma" value="{{turma.qtdvagas}}">
+<form action="/turmaEdit" method="POST"
+    <input type="hidden" name="id" value="{{turmas._id}}">
+    <p>Creche: </p> <input type="text" name="creche" value="{{turmas.creche}}">
+    <p>Turmas: </p> <input type="text" name="turmas" value="{{turmas.turma}}">
+    <p>Quantidade de Alunos : </p> <input type="text" name="qtalunos" value="{{turmas.qtalunos}}">
+    <p>Quantidade de Vagas: </p> <input type="text" name="turma" value="{{turmas.qtdvagas}}">
     <br><br>
     <input type="submit" value="Editar">
 </form>

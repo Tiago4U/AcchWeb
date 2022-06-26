@@ -1,4 +1,11 @@
 const Criancas = require('../models/models_nosql/crianca');
+function dataAtualFormatada(){
+    let data = new Date(),
+        dia  = data.getDate().toString().padStart(2, '0'),
+        mes  = (data.getMonth()+1).toString().padStart(2, '0'),
+        ano  = data.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+}
 
 module.exports = {
 
@@ -7,8 +14,8 @@ module.exports = {
     },
     async postCreate(req, res) {
         const {nome, rg, nomedopai, endereco, bairro, datanasc, turma} = req.body;
-        const crianca = new Crianca({nome, rg, nomedopai, endereco, bairro, datanasc, turma});
-        await crianca.save();
+        const Crianca = new crianca({nome, rg, nomedopai, endereco, bairro, datanasc, turma});
+        await Crianca.save();
         res.redirect('/home');
     },
     async getList(req, res) {
