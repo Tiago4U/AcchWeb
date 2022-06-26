@@ -22,59 +22,59 @@
         <nav id="nav">
 
             <ul id="menu">
-                <li><a href="/home">Home</a></li>
+                <li><a id="buttonmenu" href="/home">Home</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                    <a id="buttonmenu" class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Relatórios
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/usuarioCreate">Cadastrar</a>
-                        <a class="dropdown-item" href="/usuarioList">Listar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/usuarioCreate">Cadastrar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/usuarioList">Listar</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a id="buttonmenu" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Alunos
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/criancaCreate">Cadastrar</a>
-                        <a class="dropdown-item" href="/criancaList">Listar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/criancaCreate">Cadastrar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/criancaList">Listar</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a id="buttonmenu" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Turmas
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/turmaCreate">Cadastrar</a>
-                        <a class="dropdown-item" href="/turmaList">Listar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/turmaCreate">Cadastrar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/turmaList">Listar</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a id="buttonmenu" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Creches
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/crecheCreate">Cadastrar</a>
-                        <a class="dropdown-item" href="/crecheList">Listar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/crecheCreate">Cadastrar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/crecheList">Listar</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                    <a id="buttonmenu" class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Usuários
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/usuarioCreate">Cadastrar</a>
-                        <a class="dropdown-item" href="/usuarioList">Listar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/usuarioCreate">Cadastrar</a>
+                        <a id="subbuttonmenu" class="dropdown-item" href="/usuarioList">Listar</a>
                     </div>
                 </li>
                 </li>
-                <li><a class="nav-link" href="/logout">Logout</a></li>
+                <li><a id="buttonmenu" class="nav-link" href="/logout">Logout</a></li>
 
             </ul>
         </nav>
@@ -98,77 +98,48 @@
     <div class="content texto-destaque ">
         <h1>Sistema para CMEI</h1>
         <p> Sistema especializado para CMEI(Centro Municipal de Educação Infantil), utilizado para gerenciamento de
-            creches, turmas, pais e alunos. </p>
+            creches, turmas, pais e alunos. Sendo possivel cadastrar usuários administrador para controle geral,
+            e seus diretores para gerenciamento das turmas do CMEI que o mesmo é responsavel. </p>
     </div>
 </div>
 <div class="col-100 bloco-imagens-texto">
     <div class="content" style="margin-left: 2%; float: left;">
         <div class="col-3 bloco-texto bloco-imagem">
-            <img src="./img/software.png">
-            <h2>asasasasasasasasasas</h2>
-            <p> asasasasasasasasasasasasasasasa
-                sasasasasasasasasasasasasa
-                sasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasa
-                sasasasasasas
+            <img src="./images/adm.jpg">
+            <h2>Administrador</h2>
+            <p> Usuario administrados, efetuando o gerenciamento completo do sistema.
             </p>
         </div>
         <div class=" col-3 bloco-texto bloco-imagem">
-            <img src="./img/Biotecnologia.png">
-            <h2>asasasasasasasasasas</h2>
-            <p> asasasasasasasasasasasasasasasa
-                sasasasasasasasasasasasasa
-                sasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasa
-                sasasasasasas
+            <img src="./images/diretor.jpg">
+            <h2>Diretor</h2>
+            <p> Usuário diretor, para gerenciamento completo da creche que o mesmo é responsavel.
             </p>
         </div>
         <div class="col-3 bloco-texto bloco-imagem">
-            <img src="./img/zootecnia.png">
-            <h2>asasasasasasasasasas</h2>
-            <p> asasasasasasasasasasasasasasasa
-                sasasasasasasasasasasasasa
-                sasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasa
-                sasasasasasas
+            <img src="./images/pais.jpg">
+            <h2>Pais</h2>
+            <p> Acesso para os pais cadastrarem os filhos nas escolas com vagas disponiveis.
             </p>
         </div>
     </div>
     <div class="content" style="margin-left: 2%; float: left;">
         <div class="col-3 bloco-texto bloco-imagem">
-            <img src="./img/florestal.png">
-            <h2>asasasasasasasasasas</h2>
-            <p> asasasasasasasasasasasasasasasa
-                sasasasasasasasasasasasasa
-                sasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasa
-                sasasasasasas
+            <img src="./images/alunos.jpg">
+            <h2>Alunos</h2>
+            <p> Acesso para visualizar a listagem de todos os alunos cadastrados em cada escola e turma.
             </p>
         </div>
         <div class="col-3 bloco-texto bloco-imagem">
-            <img src="./img/agronomia.png">
-            <h2>asasasasasasasasasas</h2>
-            <p> asasasasasasasasasasasasasasasa
-                sasasasasasasasasasasasasa
-                sasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasa
-                sasasasasasas
+            <img src="./images/relatorio.jpg">
+            <h2>Relatorio</h2>
+            <p> Funcionalidade para realizar a geração de relatórios.
             </p>
         </div>
         <div class="col-3 bloco-texto bloco-imagem">
-            <img src="./img/biologicas.png">
-            <h2>asasasasasasasasasas</h2>
-            <p> asasasasasasasasasasasasasasasa
-                sasasasasasasasasasasasasa
-                sasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasasas
-                asasasasasasasasasasasasasasa
-                sasasasasasas
+            <img src="./images/escola.jpg">
+            <h2>Escolas</h2>
+            <p> Cadastro de escolas, diretor e turmas.
             </p>
         </div>
     </div>

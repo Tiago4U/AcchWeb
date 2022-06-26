@@ -214,7 +214,7 @@ main {
 .bloco-imagem {
     /*Tal vez tenha que remover*/
     height: 300px;
-    border: 1px solid #c5c5c5;
+
     padding-top: 30px;
     padding-bottom: 30px;
     margin-left: 70px;
@@ -326,4 +326,44 @@ h3 {
     border-radius: 5px;
     margin-left: 479px;
     margin-top: -21px;
+}
+
+#buttonmenu:focus {
+    border-bottom: 2px solid #08558B;
+}
+
+#buttonmenu {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #09375D;
+    cursor: pointer;
+}
+
+#buttonmenu:hover {
+    background-color: #47568d;
+}
+
+#buttonmenu a {
+    text-align: center;
+}
+
+
+#subbuttonmenu:focus {
+    border-bottom: 2px solid #08558B;
+}
+
+#subbuttonmenu {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #09375D;
+    cursor: pointer;
 }
