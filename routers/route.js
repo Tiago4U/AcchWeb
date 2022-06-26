@@ -51,7 +51,7 @@ route.post("/login", controllerUsuario.postLogin);
 //Usuario - CRUD
 route.get("/usuarioCreate", controllerUsuario.getCreate);
 route.post("/usuarioCreate", controllerUsuario.postCreate);
-route.get("/usuarioList", controllerUsuario.getList); 
+route.get("/usuarioList", controllerUsuario.getList);
 
 //Controller Animal
 //Animal-CRUD
