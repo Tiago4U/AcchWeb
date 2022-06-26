@@ -13,7 +13,6 @@
         <form action="/usuarioEdit" method="POST">
             <fieldset>
                 <div class="container">
-                    <label for="text">ID Aluno:</label>
                     <input type="hidden" name="id" value="{{usuario._id}}"><br>
                 </div>
                 <div class="container">
@@ -21,23 +20,23 @@
                     <input type="text" name="nome" value="{{usuario.nome}}"><br>
                 </div>
                 <div class="container">
-                    <label for="text">Senha:</label>
+                    <label for="text">Data de Nascimento:</label>
                     <input type="date" name="datanasc" value="{{usuario.datanasc}}"><br>
                 </div>
                 <div class="container">
-                    <label for="text">Pergunta secreta:</label>
+                    <label for="text">E-mail:</label>
                     <input type="text" name="email" value="{{usuario.email}}"><br>
                 </div>
                 <div class="container">
-                    <label for="text">Pergunta secreta:</label>
+                    <label for="text">Login:</label>
                     <input type="text" name="login" value="{{usuario.login}}"><br>
                 </div>
                 <div class="container">
-                    <label for="text">Pergunta secreta:</label>
+                    <label for="text">Senha:</label>
                     <input type="text" name="senha" value="{{usuario.senha}}"><br>
                 </div>
                 <div class="container">
-                    <label for="text">Pergunta secreta:</label>
+                    <label for="text">Grupo Usuário:</label>
                     <input type="text" name="tipo" value="{{usuario.tipo}}"><br>
                 </div>
             </fieldset>
