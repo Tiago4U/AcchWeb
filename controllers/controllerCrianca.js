@@ -1,4 +1,4 @@
-const Criancas = require('../models/models_nosql/crianca');
+const Crianca = require('../models/models_nosql/crianca');
 
 module.exports = {
 
@@ -6,6 +6,7 @@ module.exports = {
         res.render('crianca/criancaCreate');
     },
     async postCreate(req, res) {
+        console.log(req.body);
         const {nome, rg, nomedopai, endereco, bairro, datanasc, turma} = req.body;
         const crianca = new Crianca({nome, rg, nomedopai, endereco, bairro, datanasc, turma});
         await crianca.save();
@@ -23,7 +24,10 @@ module.exports = {
     },
     async postEdit(req, res) {
         const {nome, rg, nomedopai, endereco, bairro, datanasc, turma} = req.body;
+        console.log('passou1');
+        console.log(req.body);
         await Crianca.findOneAndUpdate({_id:req.body.id}, {nome, rg, nomedopai, endereco, bairro, datanasc, turma});
+        console.log('passou2');
         res.redirect('/criancaList');
     },
     async getDelete(req, res) {
