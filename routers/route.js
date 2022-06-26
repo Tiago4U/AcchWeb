@@ -58,7 +58,7 @@ route.get("/usuarioList", controllerUsuario.getList);
 route.get("/animalCreate", controllerAnimal.getCreate);
 route.get("/animalList", controllerAnimal.getList);
 route.get("/animalEdit/:id", controllerAnimal.getEdit);
-route.get("/animalDelete/:id", controllerAnimal.getDelete);
+route.get("/animalDelete/:id", controllerAnimal.getDelete); 
 
 route.get("/usuarioEdit/:id", controllerUsuario.getEdit);
 route.post("/usuarioEdit", controllerUsuario.postEdit);
