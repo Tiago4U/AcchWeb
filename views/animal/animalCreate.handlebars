@@ -1,15 +1,52 @@
-<form action="/animalCreate" method="POST" enctype="multipart/form-data"> ​
-    Nome: <input type="text" name="nome">​
-    <br> <br>​
-    Nome do Proprietario: <input type="text" name="nomeDoProprietario">​
-    <br> <br>​
-    Endereço: <input type="text" name="endereco">​
-    <br> <br>​
-    Tipo: <input type="text" name="tipo">​
-    <br> <br>​
-    Raça: <input type="text" name="raca">
-    <br> <br>
-    Imagem: <input type="file" id="imagem" name="imagem">​
-    <br> <br>​
-    <input type="submit" value="Cadastrar">​
-</form>​
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+</head>
+
+<body>
+    <section>
+
+        <h1>Cadastrar Aluno</h1>
+        <form action="/animalCreate" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <div class="container">
+                    <input type="text" name="nome" placeholder="Digite o nome do aluno">
+
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="nomeDoProprietario" placeholder="Digite o nome do pai">
+
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="endereco" placeholder="Digite seu endereço">
+
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="tipo" placeholder="Digite seu tipo">
+
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="raca" placeholder="Digite sua raça">
+
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="file" id="imagem" name="imagem">
+
+                    <label></label>
+                </div>
+            </fieldset>
+
+            <div>
+                <input id="buttoncadastro" type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </section>
+</body>
+
+​

@@ -41,3 +41,103 @@ a:hover {
     display: block;
     padding: .5rem;
 }
+
+
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+ul {
+    height: 40px;
+    padding: 0px !important;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #252323;
+    height: 60px;
+}
+
+main {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    padding: 7px;
+    width: 50%;
+}
+
+.redes-sociais ul li {
+    margin-left: 15px;
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+
+.redes-sociais {
+    width: 30%;
+    float: right;
+}
+
+.menu-secundario {
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.menu-urls {
+    border-bottom: 3px solid #efefef;
+}
+
+.menu-opcoes ul li {
+    display: inline-block;
+    color: #b8b8b8;
+    margin-left: 15px;
+    margin-top: 8px;
+    height: 48px;
+}
+
+.menu-opcoes ul li:hover {
+    border-bottom: 3px solid #00bac6;
+}
+
+.menu-opcoes ul li a:hover {
+    color: #00bac6;
+}
+
+.menu-opcoes ul li a {
+    color: #b8b8b8;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu-opcoes {
+    width: 60%;
+    float: left;
+}
+
+.menu-opcoes ul ul {
+    position: absolute;
+    display: none;
+    min-width: 200px;
+    background: lightgrey;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu-opcoes ul li:hover>ul {
+    display: block;
+}
+
+.menu-opcoes ul ul li:hover {
+    color: #00bac6;
+}

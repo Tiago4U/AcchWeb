@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex;**/
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    background: #fff;
+    padding: 30px 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px;
+    max-width: 70vw;
+}
+
+section h1 {
+    padding: 40px 40px;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    padding-top: 20px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.container {
+    margin: 10px 10px;
+    width: calc(100% - 20px);
+    height: 70px;
+    border: none;
+    background-color: #ededed;
+    border-radius: 4px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 10px 0 10px;
+
+}
+
+.container {
+    position: relative;
+}
+
+
+.container input:focus~label,
+.container input:valid~label {
+    left: 20px;
+    top: -10px;
+    color: #2e2e2e;
+}
+
+#check {
+    width: 50%;
+    text-transform: 14px;
+    display: flex;
+}
+
+input {
+    width: 650px;
+    height: 40px;
+    margin: auto 0;
+    border-radius: 5px;
+
+    border: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#check label {
+    margin: auto 10px;
+    color: #555;
+    transition: 0.5s;
+}
+
+
+#buttoncadastro:focus {
+    border-bottom: 2px solid #08558B;
+}
+
+#buttoncadastro {
+    font-family: Helvetica;
+    display: block;
+    width: 50%;
+    text-align: left;
+    border: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #08558B;
+    cursor: pointer;
+}
+
+#buttoncadastro:hover {
+    background-color: #1b223c;
+}
