@@ -4,23 +4,27 @@
     <link rel="stylesheet" href="css/stylecadastro.css">
 </head>
 
+
 <body>
     <section>
 
         <h1>Listagem de Creches</h1>
         <form action="/usuarioCreate" method="post">
             <fieldset>
-                <table border="1px">​
-                    <tr>​
-                        <td> Nome </td>​
-                        <td> RG</td>​
-                        <td> Nome do Responsável</td>​
-                        <td> Endereço</td>
-                        <td> Bairro</td>
-                        <td> Turma</td>
-                        <td> Editar</td>
-                        <td> Deletar</td>
-                    </tr>​
+                <table class="table table-bordered">
+                    <thead>​
+                        <tr>​
+                            <th scope="col">Nome</th>​
+                            <th scope="col">RG</th>​
+                            <th scope="col">Nome do Responsável</th>
+                            <th scope="col">Endereço</th>
+                            <th scope="col">Bairro</th>
+                            <th scope="col">Turma</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Deletar</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider"></tbody>​
                     {{#each criancas}}​
                     <tr>​
                         <td>{{nome}}</td>​
@@ -29,10 +33,11 @@
                         <td>{{endereco}}</td>
                         <td>{{bairro}}</td>
                         <td>{{turma}}</td>
-                        <td><a href="criancaEdit/{{_id}}"> Editar </a></td>
-                        <td><a href="criancaDelete/{{_id}}"> Deletar </a></td>​
+                        <td><a id="buttoncadastrar" href="criancaEdit/{{_id}}"> Editar </a></td>
+                        <td><a id="buttondeletar" href="criancaDelete/{{_id}}"> Deletar </a></td>​
                     </tr>​
-                    {{/each}}​
+                    {{/each}}
+                    </tbody>​
                 </table>
             </fieldset>
         </form>
