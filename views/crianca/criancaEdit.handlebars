@@ -1,12 +1,11 @@
-<form action="/criancaEdit" method="POST">
-    <input type="hidden" name="id" value="{{criancas._id}}">
-    <p>Nome: </p> <input type="text" name="nome" value="{{criancas.nome}}">
-    <p>RG: </p> <input type="text" name="rg" value="{{criancas.rg}}">
-    <p>Nome do Responsável: </p> <input type="text" name="nomedopai" value="{{criancas.nomedopai}}">
-    <p>Endereço: </p> <input type="text" name="endereco" value="{{criancas.endereco}}">
-    <p>Bairro: </p> <input type="text" name="bairro" value="{{criancas.bairro}}">
-    <p>Data de Nascimento: </p> <input type="date" name="datanasc" value="{{criancas.datanasc}}">
-    <p>Turma: </p> <input type="text" name="turma" value="{{criancas.turma}}">
+<form action="/criancaEdit" method="POST" enctype="multipart/formdata">
+    <input type="hidden" name="id" value="{{crianca._id}}">
+    <p>Nome: </p> <input type="text" name="nome" value="{{crianca.nome}}">
+    <p>RG: </p> <input type="text" name="rg" value="{{crianca.rg}}">
+    <p>Nome do Responsável: </p> <input type="text" name="nomedopai" value="{{crianca.nomedopai}}">
+    <p>Endereço: </p> <input type="text" name="endereco" value="{{crianca.endereco}}">
+    <p>Bairro: </p> <input type="text" name="bairro" value="{{crianca.bairro}}">
+    <p>Turma: </p> <input type="text" name="turma" value="{{crianca.turma}}">
     <br><br>
     <input type="submit" value="Editar">
 </form>

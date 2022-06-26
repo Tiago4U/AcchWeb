@@ -7,7 +7,7 @@ const Crianca = Schema({
    nomedopai: {type: String, required: true},
    endereco: {type: String, required: true},
    bairro: {type: String, required: true},
-   datanasc: {type: Date, required: true},
+   datanasc: {type: String, required: true},
    turma: {type: String, required: true} 
 });
 

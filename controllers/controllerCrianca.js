@@ -1,4 +1,11 @@
-const Crianca = require('../models/models_nosql/crianca');
+const Criancas = require('../models/models_nosql/crianca');
+function dataAtualFormatada(){
+    let data = new Date(),
+        dia  = data.getDate().toString().padStart(2, '0'),
+        mes  = (data.getMonth()+1).toString().padStart(2, '0'),
+        ano  = data.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+}
 
 module.exports = {
 
@@ -6,10 +13,9 @@ module.exports = {
         res.render('crianca/criancaCreate');
     },
     async postCreate(req, res) {
-        console.log(req.body);
         const {nome, rg, nomedopai, endereco, bairro, datanasc, turma} = req.body;
-        const crianca = new Crianca({nome, rg, nomedopai, endereco, bairro, datanasc, turma});
-        await crianca.save();
+        const Crianca = new crianca({nome, rg, nomedopai, endereco, bairro, datanasc, turma});
+        await Crianca.save();
         res.redirect('/home');
     },
     async getList(req, res) {
@@ -24,10 +30,7 @@ module.exports = {
     },
     async postEdit(req, res) {
         const {nome, rg, nomedopai, endereco, bairro, datanasc, turma} = req.body;
-        console.log('passou1');
-        console.log(req.body);
         await Crianca.findOneAndUpdate({_id:req.body.id}, {nome, rg, nomedopai, endereco, bairro, datanasc, turma});
-        console.log('passou2');
         res.redirect('/criancaList');
     },
     async getDelete(req, res) {
