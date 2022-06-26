@@ -1,11 +1,39 @@
-<form action="/turmaCreate" method="POST">
-    Creche: <input type="text" name="creche">​
-    <br> <br>​
-    Turmas: <input type="text" name="turma">​
-    <br> <br>​
-    Qauntida de Alunos: <input type="text" name="qtalunos">​
-    <br> <br>​
-    Quantidade de Vagas: <input type="text" name="qtdvagas">​​
-    <br> <br>​
-    <input type="submit" value="Cadastrar">​
-</form>​
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+</head>
+
+<body>
+    <section>
+
+        <h1>Cadastrar Turmas</h1>
+        <form action="/turmaCreate" method="POST">
+            <fieldset>
+                <div class="container">
+                    <input type="text" name="creche" placeholder="Digite o nome da creche">
+
+                    <label></label>
+                </div>
+                <div class="container">
+
+                    <input type="text" name="turma" placeholder="Digite o nome da turma">
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="qtalunos" placeholder="Digite a quantidade de alunos">
+                    <label></label>
+                </div>
+                <div class="container">
+                    <input type="text" name="qtdvagas" placeholder="Digite a quantidade de vagas">
+
+                    <label></label>
+                </div>
+            </fieldset>
+
+            <div>
+                <input id="buttoncadastro" type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </section>
+</body>​

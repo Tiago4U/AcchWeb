@@ -1,20 +1,41 @@
-<table border="1px">​
-    <tr>​
-        <td> Creche </td>​
-        <td> Turmas</td>​
-        <td> Quantidade de Alunos</td>​
-        <td> Quantidade de Vagas</td>
-        <td> Editar</td>
-        <td> Deletar</td>
-    </tr>​
-    {{#each turmas}}​
-    <tr>​
-        <td>{{creche}}</td>​
-        <td>{{turma}}</td>​
-        <td>{{qtalunos}}</td>
-        <td>{{qtdvagas}}</td>
-        <td><a href="turmaEdit/{{_id}}"> Editar </a></td>
-        <td><a href="turmaDelete/{{_id}}"> Deletar </a></td>​
-    </tr>​
-    {{/each}}​
-</table>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+</head>
+
+<body>
+    <section>
+
+        <h1>Listagem de Creches</h1>
+        <form action="/usuarioCreate" method="post">
+            <fieldset>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Creche</th>
+                            <th scope="col">Turmas</th>
+                            <th scope="col">Quantidade de Alunos</th>
+                            <th scope="col">Quantidade de Vagas</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Deletar</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        {{#each turmas}}
+                        <tr>
+                            <td>{{creche}}</td>
+                            <td>{{turma}}</td>
+                            <td>{{qtalunos}}</td>
+                            <td>{{qtdvagas}}</td>
+                            <td><a id="buttoncadastrar" href="turmaEdit/{{_id}}"> Editar </a></td>
+                            <td><a id="buttondeletar" href="turmaDelete/{{_id}}"> Deletar </a></td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </section>
+</body>

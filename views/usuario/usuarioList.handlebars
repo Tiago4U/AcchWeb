@@ -1,24 +1,45 @@
-<table border="1px">
-    <tr>
-        <td> Nome Completo</td>
-        <td> Data de Nascimento</td>
-        <td> Email</td>
-        <td> Login </td>
-        <td> Senha</td>
-        <td> Tipo de Usuário</td>
-        <td> Editar</td>
-        <td> Deletar</td>
-    </tr>
-    {{#each usuarios}}
-    <tr>
-        <td>{{nome}}</td>
-        <td>{{datanasc}}</td>
-        <td>{{email}}</td>
-        <td>{{login}}</td>
-        <td>{{senha}}</td>
-        <td>{{tipo}}</td>
-        <td><a href="usuarioEdit/{{_id}}"> Editar </a></td>
-        <td><a href="usuarioDelete/{{_id}}"> Deletar </a></td>
-    </tr>
-    {{/each}}
-</table>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+</head>
+
+<body>
+    <section>
+
+        <h1>Listagem de Usuarios</h1>
+        <form action="/usuarioCreate" method="post">
+            <fieldset>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome Completo</th>
+                            <th scope="col">Data de Nascimento</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Login</th>
+                            <th scope="col">Senha</th>
+                            <th scope="col">Tipo de Usuário</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Tipo de Usuário</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        {{#each usuarios}}
+                        <tr>
+                            <td>{{nome}}</td>
+                            <td>{{datanasc}}</td>
+                            <td>{{email}}</td>
+                            <td>{{login}}</td>
+                            <td>{{senha}}</td>
+                            <td>{{tipo}}</td>
+                            <td><a id="buttoncadastrar" href="usuarioEdit/{{_id}}"> Editar </a></td>
+                            <td><a id="buttondeletar" href="usuarioDelete/{{_id}}"> Deletar </a></td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </section>
+</body>
