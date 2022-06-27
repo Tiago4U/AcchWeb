@@ -52,9 +52,6 @@ route.post("/login", controllerUsuario.postLogin);
 route.get("/usuarioCreate", controllerUsuario.getCreate);
 route.post("/usuarioCreate", controllerUsuario.postCreate);
 route.get("/usuarioList", controllerUsuario.getList);
-
-
-
 route.get("/usuarioEdit/:id", controllerUsuario.getEdit);
 route.post("/usuarioEdit", controllerUsuario.postEdit);
 route.get("/usuarioDelete/:id", controllerUsuario.getDelete);
@@ -85,3 +82,6 @@ route.get("/criancaList", controllerCrianca.getList);
 route.get("/criancaEdit/:id", controllerCrianca.getEdit);
 route.post("/criancaEdit", controllerCrianca.postEdit);
 route.get("/criancaDelete/:id", controllerCrianca.getDelete);
+
+//Relatorios
+route.get("/vagasList", controllerRelatorio.getList);
