@@ -53,8 +53,6 @@ route.get("/usuarioCreate", controllerUsuario.getCreate);
 route.post("/usuarioCreate", controllerUsuario.postCreate);
 route.get("/usuarioList", controllerUsuario.getList);
 
-//Controller Animal
-//Animal-CRUD
 route.get("/usuarioEdit/:id", controllerUsuario.getEdit);
 route.post("/usuarioEdit", controllerUsuario.postEdit);
 route.get("/usuarioDelete/:id", controllerUsuario.getDelete);
