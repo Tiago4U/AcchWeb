@@ -37,19 +37,7 @@ fieldset {
     display: inline-block;
 }
 
-.container {
-    margin: 10px 10px;
-    width: calc(100% - 20px);
-    height: 70px;
-    border: none;
-    background-color: #ededed;
-    border-radius: 4px;
-    color: #333;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 14px 10px 0 10px;
 
-}
 
 .container {
     position: relative;
@@ -70,6 +58,7 @@ fieldset {
 }
 
 input {
+    display: block;
     width: 650px;
     height: 40px;
     margin: auto 0;
@@ -78,6 +67,13 @@ input {
     border: 2px solid #323232;
     padding: 10px;
     font-size: 1rem;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: left;
 }
 
 #check label {
