@@ -534,7 +534,7 @@
     <section>
 
         <h1>Editar Turma</h1>
-        <form action="/turmaEdit" method="POST"></form>
+        <form action="/turmaEdit" method="POST">
         <fieldset>
             <div class="container">
 
@@ -546,7 +546,7 @@
             </div>
             <div class="container">
                 <label for="text">Nome turma:</label>
-                <input type="text" name="turmas" value="{{turmas.turma}}"><br>
+                <input type="text" name="turma" value="{{turmas.turma}}"><br>
             </div>
             <div class="container">
                 <label for="text">Quantidade alunos:</label>
@@ -554,7 +554,7 @@
             </div>
             <div class="container">
                 <label for="text">Quantidade vagas:</label>
-                <input type="number" name="turma" value="{{turmas.qtdvagas}}"><br>
+                <input type="number" name="qtdvagas" value="{{turmas.qtdvagas}}"><br>
             </div>
             <input id="buttoncadastro" type="submit" value="Editar">
 
