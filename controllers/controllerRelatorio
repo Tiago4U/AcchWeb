@@ -1,0 +1,36 @@
+//const Crianca = require('../models/models_nosql/crianca');
+const Creche = require('../models/models_nosql/creche');
+const Turma = require('../models/models_nosql/turma');
+//const Relatorio = require('../models/models_nosql/relatorio');
+
+//Vagas Livres/Ocupadas por creche
+
+module.exports = {
+
+    async getList(req, res) {
+        Turma.find().then((turmas) => {
+            console.log('passou relatorio lista');
+            res.render('relatorio/vagasList', {turmas: turmas.map(turmas => turmas.toJSON())});
+            console.log('passou relatorio post');
+        });
+    }
+/*
+
+    async getList(req, res) {
+        console.log('passou relatorio lista');
+        await Turma.findOneAndUpdate({ creche: req.body.nome }, req.body);
+        res.render('relatorio/vagasList', {turmas:turmas.toJSON()});
+    },*/
+    /*async getEdit(req, res) {
+        await Crianca.findOne({_id:req.params.id}).then((criancas)=>{
+        res.render('crianca/criancaEdit', {criancas:criancas.toJSON()});
+    });
+    },
+
+    async getList(req, res) {
+        Crianca.find().then((criancas) => {
+            res.render('crianca/criancaList', {criancas: criancas.map(criancas => criancas.toJSON())});
+        });
+    }*/
+                
+}

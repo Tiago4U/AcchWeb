@@ -1,0 +1,51 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+</head>
+
+<body>
+    <section>
+
+        <h1>Vagas por Creche</h1>
+        <div class="container">
+        
+        <label>Nome da Creche</label>     ​
+        <table class="table table-bordered">
+                <tr>
+                    <th> <input type="text" name="nome" placeholder="Digite o nome da Creche"></th>
+                    <td><a id="buttoncadastrar" href="crecheEdit/{{_id}}"> Pesquisar </a></td>
+                </tr>
+        </table>
+        </div>
+         <br><br>
+          <br><br>
+        <form action="/vagas" method="post">
+            <fieldset>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Endereço Creche</th>
+                            <th scope="col">Bairro</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Deletar</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        {{#each creches}}
+                        <tr>
+                            <td>{{nome}}</td>
+                            <td>{{endereco}}</td>
+                            <td>{{bairro}}</td>
+                            <td><a id="buttoncadastrar" href="crecheEdit/{{_id}}"> Editar </a></td>
+                            <td><a id="buttondeletar" href="crecheDelete/{{_id}}"> Deletar </a></td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </section>
+</body>

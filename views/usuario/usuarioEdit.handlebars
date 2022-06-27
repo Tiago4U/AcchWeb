@@ -1,4 +1,10 @@
-<form action="/usuarioEdit" method="POST">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+</head>
+<body>
+<form rel="stylesheet" href="css/stylecadastro.css" action="/usuarioEdit" method="POST">
     <input type="hidden" name="id" value="{{usuario._id}}">
     <p>Nome Completo:</p> <input type="text" name="nome" value="{{usuario.nome}}">
     <p>Data de Nascimento:</p> <input type="date" name="datanasc" value="{{usuario.datanasc}}">
@@ -9,3 +15,4 @@
     <br><br>
     <input type="submit" value="Editar">
 </form>
+</body>
