@@ -18,9 +18,11 @@
                             <th scope="col">Email</th>
                             <th scope="col">Login</th>
                             <th scope="col">Senha</th>
+                            <th scope="col">Pergunta secreta</th>
+                            <th scope="col">Resposta pergunta Secreta</th>
                             <th scope="col">Tipo de Usuário</th>
                             <th scope="col">Editar</th>
-                            <th scope="col">Tipo de Usuário</th>
+                            <th scope="col">Deletar</th>
 
                         </tr>
                     </thead>
@@ -32,6 +34,8 @@
                             <td>{{email}}</td>
                             <td>{{login}}</td>
                             <td>{{senha}}</td>
+                            <td>{{pergunta_secreta}}</td>
+                            <td>{{resposta_pergunta}}</td>
                             <td>{{tipo}}</td>
                             <td><a id="buttoncadastrar" href="usuarioEdit/{{_id}}"> Editar </a></td>
                             <td><a id="buttondeletar" href="usuarioDelete/{{_id}}"> Deletar </a></td>

@@ -21,7 +21,6 @@
         min-height: 100vh;
 
     }
-
     section {
         background: rgb(255, 255, 255);
         padding: 30px 5px;
@@ -43,9 +42,6 @@
         padding: 0 10px;
         display: inline-block;
     }
-
-
-
     .container {
         position: relative;
     }
@@ -63,7 +59,6 @@
         text-transform: 14px;
         display: flex;
     }
-
     input {
         display: block;
         width: 650px;
@@ -75,21 +70,17 @@
         padding: 10px;
         font-size: 1rem;
     }
-
     label {
         font-weight: bold;
         display: block;
         width: 100%;
         text-align: left;
     }
-
     #check label {
         margin: auto 10px;
         color: #555;
         transition: 0.5s;
     }
-
-
     #buttoncadastro:focus {
         border-bottom: 2px solid #08558B;
     }
@@ -572,3 +563,14 @@
         </form>
     </section>
 </body>
+<form action="/turmaEdit" method="POST">
+    <input type="hidden" name="id" value="{{turmas._id}}">
+    <p>Creche: </p> <input type="text" name="creche" value="{{turmas.creche}}">
+    <p>Turmas: </p> <input type="text" name="turma" value="{{turmas.turma}}">
+    <p>Quantidade de Alunos: </p> <input type="number" name="qtalunos" value="{{turmas.qtalunos}}">
+    <p>Quantidade de Vagas: </p> <input type="number" name="qtdvagas" value="{{turmas.qtdvagas}}">
+    <br><br>
+    <input type="submit" value="Editar">
+</form>
+
+

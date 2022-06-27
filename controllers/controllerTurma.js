@@ -20,7 +20,7 @@ module.exports = {
             console.log(turmas);
             res.render('turma/turmaList', {turmas: turmas.map(turmas => turmas.toJSON())});
         });
-        console.log("passou");
+        
     },
     async getEdit(req, res) {
         await Turma.findOne({_id:req.params.id}).then((turmas)=>{
@@ -28,8 +28,8 @@ module.exports = {
     });
     },
     async postEdit(req, res) {
-        const {creche, turmas, qtalunos, qtdvagas} = req.body;
-        await Turma.findOneAndUpdate({_id:req.body.id}, {creche, turmas, qtalunos, qtdvagas});
+        const {creche, turma, qtalunos, qtdvagas} = req.body;
+        await Turma.findOneAndUpdate({_id:req.body.id}, {creche, turma, qtalunos, qtdvagas});
         res.redirect('/turmaList');
     },
     async getDelete(req, res) {
