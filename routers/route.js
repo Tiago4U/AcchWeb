@@ -3,7 +3,7 @@ const controllerUsuario = require('../controllers/controllerUsuario');
 const controllerCreche = require('../controllers/controllerCreche');
 const controllerTurma = require('../controllers/controllerTurma');
 const controllerCrianca = require('../controllers/controllerCrianca');
-
+const controllerRelatorio = require('../controllers/controllerRelatorio');
 
 const route = express.Router();
 const multer = require('multer');
