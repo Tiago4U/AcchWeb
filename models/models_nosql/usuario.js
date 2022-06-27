@@ -7,7 +7,9 @@ const Usuario = Schema({
     senha: { type: String, required: true },
     datanasc: { type: Date, required: true },
     email: { type: String, required: true },
-    tipo: { type: String, required: true }  
+    tipo: { type: String, required: true },
+    pergunta_secreta: { type: String, required: true },
+    resposta_pergunta: { type: String, required: true }
 });
 
 module.exports = mongoose.model("Usuario", Usuario);

@@ -53,8 +53,8 @@ module.exports = {
         res.render('usuario/usuarioCreate');
     },
     async postCreate(req, res) {
-        const {login, senha, datanasc, email, nome, tipo} = req.body;
-        const usuario = new Usuario({login, senha, datanasc, email, nome, tipo});
+        const {login, senha, datanasc, email, nome, tipo, pergunta_secreta, resposta_pergunta} = req.body;
+        const usuario = new Usuario({login, senha, datanasc, email, nome, tipo, pergunta_secreta, resposta_pergunta});
         await usuario.save();
         res.redirect('/home');
     },
